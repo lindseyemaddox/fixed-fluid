@@ -1,5 +1,6 @@
 .main
   margin-left: 340px
+  transition: margin 300ms ease
   
   aside
     position: fixed
@@ -8,6 +9,7 @@
     bottom: 0
     width: 340px
     background-color: pink
+    transition: left 300ms ease
   
     .grid
       margin: 63px 32px
@@ -22,3 +24,17 @@
       padding: 135px 40px 135px 140px
       background-color: blue
       
+input[type='checkbox']
+  position: absolute
+  top: 10px
+  left: 350px
+  transition: left 300ms ease
+  
+  &:checked
+    left: 10px
+  
+    & ~ .main aside
+      left: -340px
+
+    & ~ .main
+      margin-left: 0

@@ -231,6 +231,8 @@ html {
 }
 .main {
   margin-left: 340px;
+  -webkit-transition: margin 300ms ease;
+  transition: margin 300ms ease;
 }
 .main aside {
   position: fixed;
@@ -239,6 +241,8 @@ html {
   bottom: 0;
   width: 340px;
   background-color: #ffc0cb;
+  -webkit-transition: left 300ms ease;
+  transition: left 300ms ease;
 }
 .main aside .grid {
   margin: 63px 32px;
@@ -252,6 +256,22 @@ html {
   max-width: 860px;
   padding: 135px 40px 135px 140px;
   background-color: #00f;
+}
+input[type='checkbox'] {
+  position: absolute;
+  top: 10px;
+  left: 350px;
+  -webkit-transition: left 300ms ease;
+  transition: left 300ms ease;
+}
+input[type='checkbox']:checked {
+  left: 10px;
+}
+input[type='checkbox']:checked ~ .main aside {
+  left: -340px;
+}
+input[type='checkbox']:checked ~ .main {
+  margin-left: 0;
 }
 footer {
   margin: 0 auto;
