@@ -265,13 +265,13 @@ input[type='checkbox'] {
   transition: left 300ms ease;
 }
 input[type='checkbox']:checked {
-  left: 10px;
+  left: 42px;
 }
 input[type='checkbox']:checked ~ .main aside {
-  left: -340px;
+  left: -308px;
 }
 input[type='checkbox']:checked ~ .main {
-  margin-left: 0;
+  margin-left: 32px;
 }
 footer {
   margin: 0 auto;
