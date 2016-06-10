@@ -231,8 +231,8 @@ html {
 }
 .main {
   margin-left: 340px;
-  -webkit-transition: margin 300ms ease;
-  transition: margin 300ms ease;
+  -webkit-transition: margin 300ms ease-in;
+  transition: margin 300ms ease-in;
 }
 .main aside {
   position: fixed;
@@ -241,8 +241,8 @@ html {
   bottom: 0;
   width: 340px;
   background-color: #ffc0cb;
-  -webkit-transition: left 300ms ease;
-  transition: left 300ms ease;
+  -webkit-transition: left 300ms ease-in;
+  transition: left 300ms ease-in;
 }
 .main aside .grid {
   margin: 63px 32px;
@@ -261,8 +261,8 @@ input[type='checkbox'] {
   position: absolute;
   top: 10px;
   left: 350px;
-  -webkit-transition: left 300ms ease;
-  transition: left 300ms ease;
+  -webkit-transition: left 300ms ease-in;
+  transition: left 300ms ease-in;
 }
 input[type='checkbox']:checked {
   left: 42px;
@@ -274,20 +274,9 @@ input[type='checkbox']:checked ~ .main {
   margin-left: 32px;
 }
 footer {
-  margin: 0 auto;
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-  z-index: 1;
-}
-footer h1 {
-  color: rgba(255,255,255,0.5);
-  font-size: 0.7em;
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
-  text-align: right;
-  margin-right: 30px;
+  height: 435px;
+  position: relative;
+  background-color: #ffa500;
 }
 @media screen and (max-width: 700px) {
   html {
