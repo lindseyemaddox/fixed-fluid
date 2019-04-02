@@ -3,17 +3,17 @@ div.wrapper {
   height: 100%;
   width: 100%;
 }
-div.wrapper div.main {
+div.main {
   display: table-row;
   height: 100%;
 }
-div.wrapper div.main aside {
+aside {
   display: table-cell;
   min-width: 300px;
   width: 300px;
   background-color: pink;
 }
-div.wrapper div.main section {
+section {
   display: table-cell;
   width: 100%;
   background-color: green;
